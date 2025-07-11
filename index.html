@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWELL DEMO</title>
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <div class="header-top">
+          <div class="container">
+            <div class="header-title-area">
+              <h1 class="site-title">SWELL DEMO</h1>
+              <p class="site-subtitle">SWELL DEMO SITE 05</p>
+            </div>
+            <div class="mobile-icons">
+              <button class="mail-icon" id="mail-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z" fill="white"/>
+                </svg>
+              </button>
+              <button class="hamburger-menu" id="hamburger-menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="header-nav">
+          <div class="container">
+            <nav class="nav" id="nav">
+              <ul class="nav-list">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sample Page</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">New Post</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Download</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+          <div class="mobile-menu-content">
+            <button class="mobile-menu-close" id="mobile-menu-close">×</button>
+            <div class="mobile-menu-section">
+              <h3 class="mobile-menu-title">MENU</h3>
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Home</a></li>
+                <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Sample Page</a></li>
+                <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">New Post</a></li>
+                <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Download</a></li>
+              </ul>
+            </div>
+            <div class="mobile-menu-section">
+              <h3 class="mobile-menu-title">New Posts</h3>
+              <div class="mobile-menu-posts">
+                <div class="mobile-menu-post">
+                  <img src="/img/thumb_1-1024x576.jpg" alt="Post" class="mobile-menu-post-image">
+                  <div class="mobile-menu-post-content">
+                    <h4 class="mobile-menu-post-title">【SWELL専用】Gutenberg用オリジナルブロックの一覧</h4>
+                    <time class="mobile-menu-post-date">2019年8月30日</time>
+                  </div>
+                </div>
+                <div class="mobile-menu-post">
+                  <img src="/img/thumb_2-1024x576.jpg" alt="Post" class="mobile-menu-post-image">
+                  <div class="mobile-menu-post-content">
+                    <h4 class="mobile-menu-post-title">SWELLで使えるテキスト装飾・ボックス装飾一覧</h4>
+                    <time class="mobile-menu-post-date">2019年8月4日</time>
+                  </div>
+                </div>
+                <div class="mobile-menu-post">
+                  <img src="/img/thumb_4-1024x576.jpg" alt="Post" class="mobile-menu-post-image">
+                  <div class="mobile-menu-post-content">
+                    <h4 class="mobile-menu-post-title">他テーマからSWELLに乗り換える時のサポート用小テーマも用意しています</h4>
+                    <time class="mobile-menu-post-date">2019年8月2日</time>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mobile-menu-social">
+              <a href="#" class="mobile-menu-social-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#4267B2"/>
+                  <path d="M16 8H14C13.45 8 13 8.45 13 9V11H16L15.5 14H13V20H10V14H8V11H10V9C10 7.34 11.34 6 13 6H16V8Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu-social-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#1DA1F2"/>
+                  <path d="M18.3 8.6C17.8 8.8 17.3 9 16.7 9.1C17.3 8.7 17.8 8.1 18 7.4C17.5 7.8 16.9 8 16.2 8.2C15.7 7.6 15 7.2 14.2 7.2C12.7 7.2 11.4 8.5 11.4 10C11.4 10.2 11.4 10.4 11.5 10.6C9.3 10.5 7.3 9.4 6 7.7C5.8 8.1 5.6 8.6 5.6 9.1C5.6 10 6.1 10.8 6.8 11.3C6.4 11.3 6 11.2 5.7 11V11C5.7 12.3 6.7 13.4 8 13.6C7.8 13.7 7.5 13.7 7.2 13.7C7 13.7 6.8 13.7 6.6 13.6C7 14.7 8.1 15.5 9.4 15.5C8.4 16.3 7.1 16.8 5.7 16.8H5.2C6.5 17.6 8.1 18 9.8 18C14.2 18 16.7 13.8 16.7 10.3V9.9C17.2 9.6 17.7 9.1 18.1 8.6H18.3Z" fill="white"/>
+                </svg>
+              </a>
+              <a href="#" class="mobile-menu-social-link">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                  <circle cx="12" cy="12" r="10" fill="#E4405F"/>
+                  <circle cx="12" cy="12" r="4" stroke="white" stroke-width="2" fill="none"/>
+                  <circle cx="16" cy="8" r="1.5" fill="white"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <section class="hero">
+          <div class="hero-slider">
+            <div class="hero-slide">
+              <img src="/img/slider/demo5_b1.jpg" alt="SWELL Demo 1" class="hero-slide-image">
+              <div class="hero-slide-overlay">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">SWELL</h1>
+                  <p class="hero-subtitle">シンプルで高性能なWordPressテーマ</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <img src="/img/slider/demo5_b2.jpg" alt="SWELL Demo 2" class="hero-slide-image">
+              <div class="hero-slide-overlay">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">SWELL</h1>
+                  <p class="hero-subtitle">高機能なWordPressテーマ<br>でサイトを美しく</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-slide">
+              <img src="/img/slider/demo5_b3.jpg" alt="SWELL Demo 3" class="hero-slide-image">
+              <div class="hero-slide-overlay">
+                <div class="hero-slide-content">
+                  <h1 class="hero-title">SWELL</h1>
+                  <p class="hero-subtitle">カスタマイズ性豊富な<br>WordPressテーマ</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">New Posts</h2>
+            <p class="section-subtitle">最新の投稿</p>
+            <div class="posts-grid">
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_1-1024x576.jpg" alt="Post 1" class="post-image">
+                  <span class="post-tag">その他</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【新機能】お気に入りの写真をSwallab標準機能でストーリーズ投稿可能に</h3>
+                  <time class="post-date">2024年7月11日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_2-1024x576.jpg" alt="Post 2" class="post-image">
+                  <span class="post-tag">機能</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">ダイナミックなスライドショー機能でサイトを華やかに</h3>
+                  <time class="post-date">2024年7月10日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_4-1024x576.jpg" alt="Post 3" class="post-image">
+                  <span class="post-tag">カスタマイズ</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">カスタマイズ性豊富なテーマで、自分だけのサイトを作成</h3>
+                  <time class="post-date">2024年7月9日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_10-1024x576.jpg" alt="Post 4" class="post-image">
+                  <span class="post-tag">お知らせ</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【優先度の高い記事】最新の投稿でサイトを楽しく</h3>
+                  <time class="post-date">2024年7月8日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_12-1024x576.jpg" alt="Post 5" class="post-image">
+                  <span class="post-tag">デザイン</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【最新情報】レスポンシブデザインでモバイルフレンドリー</h3>
+                  <time class="post-date">2024年7月7日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_13-1024x576.jpg" alt="Post 6" class="post-image">
+                  <span class="post-tag">アップデート</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【機能アップデート】ユーザビリティを向上させる新機能</h3>
+                  <time class="post-date">2024年7月6日</time>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">LEAF</h2>
+            <p class="section-subtitle">記事のタイトル</p>
+            <div class="posts-grid">
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_14-1024x576.jpg" alt="Leaf 1" class="post-image">
+                  <span class="post-tag">シンプル</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【シンプルな記事】気軽に投稿できる環境を整備</h3>
+                  <time class="post-date">2024年7月5日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_16-1024x576.jpg" alt="Leaf 2" class="post-image">
+                  <span class="post-tag">機能</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【機能】カスタマイズ性豊富なテーマの魅力</h3>
+                  <time class="post-date">2024年7月4日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_10-1024x576 (1).jpg" alt="Leaf 3" class="post-image">
+                  <span class="post-tag">アップデート</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【アップデート】カスタマイズ機能 + Facebook連携でさらに便利に</h3>
+                  <time class="post-date">2024年7月3日</time>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title">TREE</h2>
+            <p class="section-subtitle">記事のタイトル</p>
+            <div class="posts-grid">
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_12-1024x576 (1).jpg" alt="Tree 1" class="post-image">
+                  <span class="post-tag">お知らせ</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【お知らせ】今日から使えるカスタマイズ機能・サイドバーカスタマイズ</h3>
+                  <time class="post-date">2024年7月2日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_13-1024x576 (1).jpg" alt="Tree 2" class="post-image">
+                  <span class="post-tag">メンテナンス</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【メンテナンス】定期的なメンテナンスでサイトを最適化</h3>
+                  <time class="post-date">2024年7月1日</time>
+                </div>
+              </article>
+              <article class="post-card">
+                <div class="post-image-wrapper">
+                  <img src="/img/thumb_14-1024x576 (1).jpg" alt="Tree 3" class="post-image">
+                  <span class="post-tag">レスポンシブ</span>
+                </div>
+                <div class="post-content">
+                  <h3 class="post-title">【レスポンシブ対応】デスクトップ・モバイル両対応のテーマ</h3>
+                  <time class="post-date">2024年6月30日</time>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2024 SWELL DEMO. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
