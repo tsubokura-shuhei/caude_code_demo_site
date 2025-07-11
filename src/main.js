@@ -4,7 +4,44 @@ import 'slick-carousel/slick/slick-theme.css'
 import $ from 'jquery'
 import 'slick-carousel'
 
+// Basic Authentication Check
+function checkAuth() {
+  const username = 'test';
+  const password = 'test';
+  
+  const isAuthenticated = sessionStorage.getItem('isAuthenticated');
+  
+  if (isAuthenticated !== 'true') {
+    const inputUsername = prompt('ユーザー名を入力してください:');
+    if (inputUsername === null) {
+      return false;
+    }
+    
+    const inputPassword = prompt('パスワードを入力してください:');
+    if (inputPassword === null) {
+      return false;
+    }
+    
+    if (inputUsername === username && inputPassword === password) {
+      sessionStorage.setItem('isAuthenticated', 'true');
+      document.body.style.visibility = 'visible';
+      return true;
+    } else {
+      alert('認証に失敗しました');
+      return false;
+    }
+  } else {
+    document.body.style.visibility = 'visible';
+  }
+  
+  return true;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+  // Check authentication first
+  if (!checkAuth()) {
+    return;
+  }
   // Initialize slick slider
   $('.hero-slider').slick({
     dots: false,
